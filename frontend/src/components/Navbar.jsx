@@ -1,4 +1,4 @@
-import { PlusSquareIcon } from '@chakra-ui/icons'
+import { ArrowBackIcon, PlusSquareIcon } from '@chakra-ui/icons'
 import { Button, Container, Flex, HStack, Text, useColorMode } from '@chakra-ui/react'
 import React from 'react'
 import { Link } from 'react-router-dom'
@@ -29,6 +29,9 @@ const Navbar = () => {
           <Link to={"/"}>Product Store 🛒</Link>
         </Text>
         <HStack spacing={2} alignItems={"center"}>
+          <Button>
+          <Link to={"/"}><ArrowBackIcon/></Link>
+          </Button>
           <Link to={"/create"}>
             <Button>
               <PlusSquareIcon fontSize={20} />
